@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DAO;
 namespace sweetstoreDEMO
 {
     public partial class Form1 : Form
@@ -23,9 +22,11 @@ namespace sweetstoreDEMO
             //string query = "select * from BANHNGOT where id = @id";
             //dt = DataProvider.Instance.ExecuteQuery(query, new object[] { "001" });
 
-            string query = "select * from BANHNGOT";
-            dt = DataProvider.Instance.ExecuteQuery(query);
-            dgv.DataSource = dt;
+            //string query = "select * from BANHNGOT";
+            //dt = DataProvider.Instance.ExecuteQuery(query);
+            //dgv.DataSource = dt;
+
+            //BUS method
         }
     }
 }
